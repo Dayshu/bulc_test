@@ -5,36 +5,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fiot</title>
-
-    <link rel="stylesheet" href="../css/fioat.css">
+    <title>my page</title>
+    <style>
+        td {
+            text-align: center;
+        }
+    </style>
 
 </head>
 
 <body>
-    <div id="head">
-        <div id="logo">
-            <link rel="stylesheet" href="#">
-            <img src="../../img/jeep.png" alt="">
+    <header>
+
+    </header>
+
+    <section>
+        <div>
+
         </div>
-        <div id="top">
-            로그인 | 회원가입 | 공지사항
+        <div>
+            <table>
+                <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+
+                <thead>
+                    <tr>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="product_selection" value="product_selection"
+                                    id="all_selection">상품배송
+                            </label>
+                        </td>
+                        <td>상품명/옵션</td>
+                        <td>가격</td>
+                        <td>수량</td>
+                        <td>주문금액</td>
+                        <td>적립금</td>
+                        <td>삭제</td>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th>
+                            <label>
+                                <input type="checkbox" name="product_selection" value="product_selection" id="fist">
+                            </label>
+                        </th>
+                        <th rowspan="2"><img src="../../img/jeep.png" alt="상품이미지"></th>
+                        <td>208,300원</td>
+                        <td>1<button>변경</button></td>
+                        <td>208,300원</td>
+                        <td>620원</td>
+                        <th><button>X</button></th>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <th>
+                            <label>
+                                <input type="checkbox" name="product_selection" value="product_selection" id="second">
+                            </label>
+                        </th>
+                        <th rowspan="2"><img src="../../img/jeep.png" alt="상품이미지"></th>
+                        <td>137,500원</td>
+                        <td>1<button>변경</button></td>
+                        <td>137,500원</td>
+                        <td>410원</td>
+                        <th><button>X</button></th>
+                    </tr>
+                </tfoot>
+            </table>
+            <figcaption>
+                <button>전체선택</button>
+                <button>선택해제</button>
+                <button>선택삭제</button>
+                <button>전체삭제</button>
+            </figcaption>
         </div>
-    </div>
-    <ul id="menu">
-        <li class="item">HTML</li>
-        <li>|</li>
-        <li class="item">CSS</li>
-        <li>|</li>
-        <li class="item">Javascript</li>
-        <li>|</li>
-        <li class="item">Python</li>
-        <li>|</li>
-        <li class="item">PHP</li>
-        <li>|</li>
-        <li class="item">Java</li>
-        <li>|</li>
-    </ul>
+    </section>
+
+
+
+    <footer>
+
+    </footer>
 
 </body>
 
