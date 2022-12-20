@@ -6,141 +6,137 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my page</title>
-    <style>
-        .purchase_process li {
-            list-style: none;
-            display: inline-block;
-        }
-
-        .purchase_process li:first-child {}
-    </style>
-
+    <link rel="stylesheet" href="../css/fioat.css">
 </head>
 
 <body>
     <header>
-
+        
     </header>
 
-    <section>
-        <div class="purchase_process">
-            <p>
-                <li>장바구니</li>
-                <li>장바구니</li>
-                <li>주문/결제</li>
-                <li>주문완료</li>
-            </p>
-        </div>
-        <div class="product_list">
-            <table>
-                <colgroup>
-                    <col>
-                    <col>
-                    <col>
-                    <col>
-                    <col>
-                    <col>
-                    <col>
-                </colgroup>
+    <section id="content" class="sub">
+        <div class="contains">
+            <div class="order_basket_wrap">
+                <form name="order_basket" method="post" action>
+                <input type="hidden" name="pd_no" value="$pd_no">
+                <div class="purchase_process">
+                    <img src="../../img/장바구니.png" alt="절차이미지" width="1200">
+                </div>
+                <div class="product_list">
+                    <table class="">
+                        <colgroup>
+                            <col width="50px">
+                            <col width="180px">
+                            <col width="495px">
+                            <col width="100px">
+                            <col width="75px">
+                            <col width="100px">
+                            <col width="100px">
+                        </colgroup>
+                
+                        <thead>
+                            <tr>
+                                <th>
+                                    <label>
+                                        <input type="checkbox" name="product_selection" value="product_selection"
+                                            id="all_selection">상품배송
+                                    </label>
+                                </th>
+                                <th>상품명/옵션</th>
+                                <th>가격</th>
+                                <th>수량</th>
+                                <th>주문금액</th>
+                                <th>적립금</th>
+                                <th>삭제</th>
+                            </tr>
+                        </thead>
+                
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <label>
+                                        <input type="checkbox" name="product_selection" value="product_selection" id="fist">
+                                    </label>
+                                </th>
+                                <td rowspan="2"><img src="../../img/jeep.png" alt="상품이미지"></td>
+                                <td>208,300원</td>
+                                <td>1<button>변경</button></td>
+                                <td>208,300원</td>
+                                <td>620원</td>
+                                <td><button>X</button></td>
+                            </tr>
+                        </tbody>
+                
+                        <tfoot>
+                            <tr>
+                                <th>
+                                    <label>
+                                        <input type="checkbox" name="product_selection" value="product_selection" id="second">
+                                    </label>
+                                </th>
+                                <td rowspan="2"><img src="../../img/jeep.png" alt="상품이미지"></td>
+                                <td>137,500원</td>
+                                <td>1<button>변경</button></td>
+                                <td>137,500원</td>
+                                <td>410원</td>
+                                <td><button>X</button></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <figcaption>
+                        <button>전체선택</button>
+                        <button>선택해제</button>
+                        <button>선택삭제</button>
+                        <button>전체삭제</button>
+                    </figcaption>
+                </div>
+                <div class="total_expense">
+                    <div class="total_Box">
+                        <ul>
+                            <li>
+                                <dl>
+                                    <dt>총 상품금액</dt>
+                                    <dd>0원</dd>
+                                    <dt>총 적립액</dt>
+                                    <dd>0원</dd>
+                                    <dt>배송비</dt>
+                                    <dd>택배(무료)</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>결제금액</dt>
+                                    <dd>
+                                        <span>0</span>
+                                        "원"
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="older_button">
+                        <a href="#" target="_self"><img src="../../img/chi_oider.png" alt="선택주문 버튼"></a>
+                        <a href="#" target="_self"><img src="../../img/all_older.png" alt="전체주문 버튼"></a>
+                    </div>
+                </div>
 
-                <thead>
-                    <tr>
-                        <th>
-                            <label>
-                                <input type="checkbox" name="product_selection" value="product_selection"
-                                    id="all_selection">상품배송
-                            </label>
-                        </th>
-                        <th>상품명/옵션</th>
-                        <th>가격</th>
-                        <th>수량</th>
-                        <th>주문금액</th>
-                        <th>적립금</th>
-                        <th>삭제</th>
-                    </tr>
-                </thead>
+                
 
-                <tbody>
-                    <tr>
-                        <th>
-                            <label>
-                                <input type="checkbox" name="product_selection" value="product_selection" id="fist">
-                            </label>
-                        </th>
-                        <td rowspan="2"><img src="../../img/jeep.png" alt="상품이미지"></td>
-                        <td>208,300원</td>
-                        <td>1<button>변경</button></td>
-                        <td>208,300원</td>
-                        <td>620원</td>
-                        <td><button>X</button></td>
-                    </tr>
-                </tbody>
 
-                <tfoot>
-                    <tr>
-                        <th>
-                            <label>
-                                <input type="checkbox" name="product_selection" value="product_selection" id="second">
-                            </label>
-                        </th>
-                        <td rowspan="2"><img src="../../img/jeep.png" alt="상품이미지"></td>
-                        <td>137,500원</td>
-                        <td>1<button>변경</button></td>
-                        <td>137,500원</td>
-                        <td>410원</td>
-                        <td><button>X</button></td>
-                    </tr>
-                </tfoot>
-            </table>
-            <figcaption>
-                <button>전체선택</button>
-                <button>선택해제</button>
-                <button>선택삭제</button>
-                <button>전체삭제</button>
-            </figcaption>
-        </div>
-        <div class="total_expense">
-            <table>
-                <colgroup>
-                    <col>
-                    <col>
-                    <col>
-                </colgroup>
-                <thead>
-                    <tr>
-                        <th scope="row">총 상품금액</th>
-                        <td>345,800원</td>
-                        <td colspan="3">결제금액 345,800원</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">총 적립액</th>
-                        <td>1,030원</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <th scope="row">배송비</th>
-                        <td>선불 2박스</td>
-                    </tr>
-                </tfoot>
-                </tr>
-            </table>
-            <div class="older_button">
-                <img src="../../img/chi_oider.png" alt="선택 주문버튼">
-                <img src="../../img/all_older.png" alt="전체 주문버튼">
+                
+                </form>
             </div>
-        </div>
+        
+        
+        
+
+
+
 
     </section>
-
-
-
     <footer>
 
     </footer>
-
 </body>
 
 </html>
